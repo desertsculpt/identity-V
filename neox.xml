@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ppg3d>
+	<packages>
+		<package name="python3"></package>
+		<package name="builtin"></package>
+	</packages>
+	<client Title="dwrg" Windowed="True" WindowClientWidth="1334" WindowClientHeight="750" WindowLimitcount="2" EnableLogFile="True" EnableMaxSize="True" EnableResize="True" FrameRate="144" LimitDisplayRate="True" ShowDumpDlg="False" ShowLogWindow="True" ResourceRoot=".\res" ClientRpc=".\bin_engine_branches\dev_compatible_h55_release\client_rpc.exe" ClientRpcCmdMode="0" ClientRpcTracePort="31200" TraceWatchPort="31318" MemoryRecordMode="0" MemoryRecordModeVram="0" MemoryRecordModePython="0" MemoryTraceDepth="30" MemoryTraceDepthVram="8" MemoryTraceDepthPython="20"></client>
+	<render Depth="32" MultiSample="0" VSync="False" EnableDeviceDebugLayer="False" UseD3D11="False" EnableShadowMap="True" EnableDepthShadow="True" EnableESM="False" EnableRenderThread="True" RedirectBufferScale="1.0" RedirectBackbuffer="True" UseScreenSpaceShadow="False" EnableGammaCorrection="False" EnableThreadedGPURes="False" MaxPointLight="5" UseUBO="True" MaxDecalNum="5" MaxObjectCountPerCluster="8" ClusterSizeX="16" ClusterSizeY="8" ClusterSizeZ="24" ClusterFarPlane="5000" ClusterParallelCulling="True" UseNewShadow="True" UseCSM="True" EnableCSMCache="False" CSMCacheStartLayer="1" UseSoftShadow="False" UsePreZ="False" TryReusePreZDepth="False" UseHZB="False" EnableSSAO="False" EffectCacheEnable="False" TerrainReceiveDeferredDecal="True" EnableStandardLinearPipeline="True" UseVolumetricFog="True" UseRenderDoc="True" EnableAsyncShaderCompile="False" EnableAsyncShaderTransition="True" EnableParallelSubmit="False"></render>
+	<gaea EnableSplines="True" EnableFoliage="True" EnableStreaming="True" EnableGPUDriven="True" EnableLastFrameHZB="True" EnableScreenSpaceDecal="False"></gaea>
+	<world GpuSkinningEnable="False" PixelDecal="True" GpuParticle="False" CrashOnInvalidGis="True" MergeStaticModel="True" SubMeshBatching="True" HardwareInstancing="True" EnableVegetation="True" EnableOpenWorldLod="True" VegetationCastShadow="True" UseObsoleteUnit="False" LoadSfxByOldRuntime="False" LoadPseForce="True" UseBpseForce="True" EnableAnimationThread="False" EnableMultiThreadParticle="False" EnableTickingGraph="False"></world>
+	<cocosui LogLevel="30" TextureSuffixOnIOS=".astc" TextureSuffixOnAndroid=".astc" TextureSuffixOnWindows=".dds" EnableBatchOptimize="True" ConvertFilenameToLower="True" TtfLetterCacheRatio="0.5" LoadSeparateAlphaFile="False"></cocosui>
+	<python Optimize="True" ThreadEnable="True"></python>
+	<filesystems>
+		<filesystem name="res">
+			<loader depth="0" name="discrete" opener="os" root="%DOC_DIR%\\res"></loader>
+			<loader depth="3" name="npk" opener="os" root="%DOC_DIR%\\res"></loader>
+			<loader depth="3" name="npk" opener="os" root="%DOC_DIR%\\res_reserved"></loader>
+			<loader depth="3" name="npk" opener="asset" root="res"></loader>
+			<loader depth="0" name="discrete" opener="asset" root="res"></loader>
+			<loader depth="0" name="discrete" opener="os" root="%WORK_DIR%\\res"></loader>
+			<loader depth="3" name="npk" opener="os" root="%WORK_DIR%\\res"></loader>
+		</filesystem>
+		<filesystem name="script">
+			<loader depth="0" name="discrete" opener="os" root="%DOC_DIR%\\script"></loader>
+			<loader depth="0" name="npk" opener="os" root="%DOC_DIR%\\script"></loader>
+			<loader depth="3" name="npk" opener="asset" root="script"></loader>
+			<loader depth="0" name="discrete" opener="asset" root="script"></loader>
+			<loader depth="0" name="discrete" opener="os" root="%WORK_DIR%\\script"></loader>
+			<loader depth="0" name="npk" opener="os" root="%WORK_DIR%\\script"></loader>
+		</filesystem>
+	</filesystems>
+</ppg3d>
